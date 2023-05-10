@@ -9,12 +9,96 @@
 $title:'Poppins', sans-serif;
 $titleSub:'Open Sans', sans-serif;
 
+
 $color-bg: #1E272E;
 $color-bgc: #171F25; 
 $color-bgcard:#192229;
 $color-text:#8E9BA4;
 $color-txtitle: #978360;
 
+
 body{
     background: $color-bg;
+}
+
+.home{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        font-size: 3rem;
+        font-family: $title;
+        color: $color-txtitle;
+    }
+    h3{
+        font-size: 2rem;
+        font-family: $titleSub;
+        color: $color-txtitle;
+    }
+    p{
+        font-size: 1rem;
+        font-family: $titleSub;
+        color: $color-text;
+    }
+
+    span{
+        font-family: $titleSub;
+    }
+
+    .homeconte{
+        width: 90%;
+        height: 90%;
+        background: $color-bgc;
+        display: flex;
+        flex-wrap: wrap;
+
+        //componetes del menú 
+
+        .homesibar{
+            width: 15%;
+            height: 100%;
+            background: $color-bgcard;
+
+            .homemenu{
+                width: 90%;
+                margin: 10px auto;
+                
+                background: $color-bgc;
+
+
+                .homeclip{
+                    width: 80%;
+                    margin: auto;
+                    height: 30vh;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    button {
+                        width: 100%;
+                        height:40px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+
+                    }
+                }
+
+            }
+        }
+
+        //componetes del contenido
+
+        .homeconatiner{
+            width: 80%;
+            height: 100%;
+            background: $color-bgc;
+        }
+    }
+
 }
