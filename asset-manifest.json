@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/portafolio-new-app/static/css/main.6316f62c.css",
-    "main.js": "/portafolio-new-app/static/js/main.05caaa2e.js",
+    "main.css": "/portafolio-new-app/static/css/main.b08f492d.css",
+    "main.js": "/portafolio-new-app/static/js/main.e8693d2a.js",
+    "static/media/bxl-whatsapp.svg": "/portafolio-new-app/static/media/bxl-whatsapp.7b1b87e188f271c43455c27714edc627.svg",
+    "static/media/bxl-github.svg": "/portafolio-new-app/static/media/bxl-github.7f5f78b1168a9147c54884d407208933.svg",
+    "static/media/bxl-codepen.svg": "/portafolio-new-app/static/media/bxl-codepen.d742ac3c021a66cd2dac1c274ae5ab76.svg",
     "index.html": "/portafolio-new-app/index.html",
+    "static/media/bxl-linkedin-square.svg": "/portafolio-new-app/static/media/bxl-linkedin-square.5c4ac34253a62910b71ace3f8d6fb979.svg",
+    "static/media/bxl-tiktok.svg": "/portafolio-new-app/static/media/bxl-tiktok.ce27919ceaedb009ff7d0cc20e6155cc.svg",
     "static/media/bxs-flag-checkered.svg": "/portafolio-new-app/static/media/bxs-flag-checkered.63a2b7c8ab17914b13b35cf2f8e48635.svg",
+    "static/media/bxl-facebook.svg": "/portafolio-new-app/static/media/bxl-facebook.a73b064899837638ebd2eea2b28d732e.svg",
     "static/media/bx-home-alt-2.svg": "/portafolio-new-app/static/media/bx-home-alt-2.583944f660e7dff466fb7ee4ce31a7dc.svg",
     "static/media/bxs-spreadsheet.svg": "/portafolio-new-app/static/media/bxs-spreadsheet.4d18ec9680003cb3f7e73eadcd679609.svg",
     "static/media/bxs-user.svg": "/portafolio-new-app/static/media/bxs-user.749bb1826c0746b5c7b2d0108106fb4b.svg",
-    "main.6316f62c.css.map": "/portafolio-new-app/static/css/main.6316f62c.css.map",
-    "main.05caaa2e.js.map": "/portafolio-new-app/static/js/main.05caaa2e.js.map"
+    "main.b08f492d.css.map": "/portafolio-new-app/static/css/main.b08f492d.css.map",
+    "main.e8693d2a.js.map": "/portafolio-new-app/static/js/main.e8693d2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.6316f62c.css",
-    "static/js/main.05caaa2e.js"
+    "static/css/main.b08f492d.css",
+    "static/js/main.e8693d2a.js"
   ]
 }
