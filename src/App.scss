@@ -9,6 +9,8 @@
 $title:'Poppins', sans-serif;
 $titleSub:'Open Sans', sans-serif;
 
+$degradador: linear-gradient(90deg, #1d2830 0%, #171F25 100% );
+
 
 $color-bg: #1E272E;
 $color-bgc: #171F25; 
@@ -19,6 +21,7 @@ $color-txtitle: #978360;
 
 body{
     background: $color-bg;
+  
 }
 
 .home{
@@ -39,6 +42,8 @@ body{
         font-size: 2rem;
         font-family: $titleSub;
         color: $color-txtitle;
+        font-weight: 300;
+        padding: 0px 10px;
     }
     p{
         font-size: 1rem;
@@ -48,6 +53,8 @@ body{
 
     span{
         font-family: $titleSub;
+        font-size: .9rem;
+        color: $color-text;
     }
 
     .homeconte{
@@ -56,13 +63,15 @@ body{
         background: $color-bgc;
         display: flex;
         flex-wrap: wrap;
+        overflow: hidden;
+        border-radius: 20px;
 
         //componetes del menú 
 
         .homesibar{
             width: 15%;
             height: 100%;
-            background: $color-bgcard;
+            position: relative;
 
             .homemenu{
                 width: 90%;
@@ -73,7 +82,7 @@ body{
 
                 .homeclip{
                     width: 80%;
-                    margin: auto;
+                    margin: 20px auto;
                     height: 30vh;
                     display: flex;
                     flex-direction: column;
@@ -85,7 +94,49 @@ body{
                         border: none;
                         outline: none;
                         cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 20px 0px 0px 20px;
+                        background: $color-bgc;
+                       
+                        
 
+                        &:hover{
+                            background-image: $degradador;
+                        }
+
+                        img{
+                            width: 24px;
+                            height: 24px;
+                            margin: 0px 5px 0px 20px;
+                            filter: invert(50%);
+                        }
+
+                    }
+                }
+
+                .homeredes{
+                    width: 90%;
+                    position: absolute;
+                    bottom: 30px;
+                    left: 30px;
+
+                    .homeredeCont{
+                        width: 80%;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        img{
+                            filter: invert(50%);
+                        }
+
+                        .homenavrede{
+                            width: 20px;
+                            height: 20px;
+                            margin: 0px 5px;
+
+                            
+                        }
                     }
                 }
 
@@ -95,9 +146,18 @@ body{
         //componetes del contenido
 
         .homeconatiner{
-            width: 80%;
+            width: 85%;
             height: 100%;
             background: $color-bgc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .homepages{
+                width: 96%;
+                height: 94%;    
+                background: #17191b;
+            }
         }
     }
 

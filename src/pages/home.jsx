@@ -4,6 +4,12 @@ import use from "../img/bxs-user.svg"
 import pro from "../img/bxs-spreadsheet.svg"
 import fo from "../img/bxs-flag-checkered.svg"
 import con from "../img/bxs-user.svg"
+import lin from "../img/bxl-linkedin-square.svg";
+import cod from "../img/bxl-codepen.svg";
+import git from "../img/bxl-github.svg";
+import facc from "../img/bxl-facebook.svg";
+import tik from "../img/bxl-tiktok.svg";
+import wha from "../img/bxl-whatsapp.svg";
 
 
 const Home = ()=>{
@@ -19,38 +25,102 @@ const Home = ()=>{
         <div className="homeconte">
           <div className="homesibar">
             <div className="homemenu">
-                <div className="homeclip">
-                 <button onClick={() => mostrarContenido("inicio")}>
-                {" "}
-                <img src={inc} alt="" />
-                <span>Inicio</span>{" "}
-              </button>
-              <button onClick={() => mostrarContenido("perfil")}>
-                {" "}
-                <img src={use} alt="" />
-                <span>Perfil</span>{" "}
-              </button>
-              <button onClick={() => mostrarContenido("proyecto")}>
-                {" "}
-                <img src={pro} alt="" />
-                <span>Proyecto</span>{" "}
-              </button>
-              <button onClick={() => mostrarContenido("formacion")}>
-                {" "}
-                <img src={fo} alt="" />
-                <span>Formación</span>{" "}
-              </button>
-              <button onClick={() => mostrarContenido("contacto")}>
-                {" "}
-                <img src={con} alt="" />
-                <span>Contactar</span>{" "}
-              </button>   
+              <div className="homeclip">
+                <button onClick={() => mostrarContenido("inicio")}>
+                  {" "}
+                  <img src={inc} alt="" />
+                  <span>Inicio</span>{" "}
+                </button>
+                <button onClick={() => mostrarContenido("perfil")}>
+                  {" "}
+                  <img src={use} alt="" />
+                  <span>Perfil</span>{" "}
+                </button>
+                <button onClick={() => mostrarContenido("proyecto")}>
+                  {" "}
+                  <img src={pro} alt="" />
+                  <span>Proyecto</span>{" "}
+                </button>
+                <button onClick={() => mostrarContenido("formacion")}>
+                  {" "}
+                  <img src={fo} alt="" />
+                  <span>Formación</span>{" "}
+                </button>
+                <button onClick={() => mostrarContenido("contacto")}>
+                  {" "}
+                  <img src={con} alt="" />
+                  <span>Contactar</span>{" "}
+                </button>
+              </div>
+
+              <div className="homeredes">
+                <div className="homeredeCont">
+                  <div className="homenavrede">
+                    <a
+                      href="https://www.linkedin.com/in/rafael-rojaspe/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={lin} alt="" />
+                    </a>
+                  </div>
+
+                  <div className="homenavrede">
+                    <a
+                      href="https://codepen.io/rafaelrr1"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={cod} alt="" />
+                    </a>
+                  </div>
+
+                  <div className="homenavrede">
+                    <a
+                      href="https://www.facebook.com/josreyoficial"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={facc} alt="" />
+                    </a>
+                  </div>
+                  <div className="homenavrede">
+                    <a
+                      href="https://github.com/rafaelrr1"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={git} alt="" />
+                    </a>
+                  </div>
+                  <div className="homenavrede">
+                    <a
+                      href="https://www.tiktok.com/@josrey_cod"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={tik} alt="" />
+                    </a>
+                  </div>
+
+                  <div className="homenavrede">
+                    <a
+                      href="https://wa.link/wznm0k"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={wha} alt="" />
+                    </a>
+                  </div>
                 </div>
-              
+              </div>
             </div>
           </div>
 
           <div className="homeconatiner">
+            <div className="homepages">
+
+           
             {opcionSeleccionada === "inicio" && (
               <div className="inicontainer">
                 <h3>Inicio</h3>
@@ -59,7 +129,7 @@ const Home = ()=>{
             )}
 
             {opcionSeleccionada === "perfil" && (
-              <div className="inicontainer">                
+              <div className="inicontainer">
                 <h3>Perfil</h3>
               </div>
             )}
@@ -84,6 +154,7 @@ const Home = ()=>{
                 <h3>Detalles</h3>
               </div>
             )}
+             </div>
           </div>
         </div>
       </div>
