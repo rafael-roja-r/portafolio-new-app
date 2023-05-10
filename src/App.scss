@@ -1,4 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+$title:'Poppins', sans-serif;
+$titleSub:'Open Sans', sans-serif;
+
+$color-bg: #1E272E;
+$color-bgc: #171F25; 
+$color-bgcard:#192229;
+$color-text:#8E9BA4;
+$color-txtitle: #978360;
+
+body{
+    background: $color-bg;
 }
