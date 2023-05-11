@@ -1,7 +1,15 @@
 {
   "files": {
-    "main.css": "/portafolio-new-app/static/css/main.b08f492d.css",
-    "main.js": "/portafolio-new-app/static/js/main.e8693d2a.js",
+    "main.css": "/portafolio-new-app/static/css/main.922ca01a.css",
+    "main.js": "/portafolio-new-app/static/js/main.04bbc54a.js",
+    "static/media/p4.jpg": "/portafolio-new-app/static/media/p4.f039b4ae8d0e3cb00df7.jpg",
+    "static/media/fondo.webp": "/portafolio-new-app/static/media/fondo.7411af48edb0be814e67.webp",
+    "static/media/p5.jpg": "/portafolio-new-app/static/media/p5.87642356cdd2aaff81f1.jpg",
+    "static/media/p2.jpg": "/portafolio-new-app/static/media/p2.61b2fe0a9c0696d29e98.jpg",
+    "static/media/p3.jpg": "/portafolio-new-app/static/media/p3.c4dc08dc37feb9e8b08a.jpg",
+    "static/media/user.png": "/portafolio-new-app/static/media/user.526871794dd265c9d9c4.png",
+    "static/media/p6.jpg": "/portafolio-new-app/static/media/p6.2686e389ba5fe380c1d8.jpg",
+    "static/media/p1.jpg": "/portafolio-new-app/static/media/p1.23970937306fac6ad9a1.jpg",
     "static/media/bxl-whatsapp.svg": "/portafolio-new-app/static/media/bxl-whatsapp.7b1b87e188f271c43455c27714edc627.svg",
     "static/media/bxl-github.svg": "/portafolio-new-app/static/media/bxl-github.7f5f78b1168a9147c54884d407208933.svg",
     "static/media/bxl-codepen.svg": "/portafolio-new-app/static/media/bxl-codepen.d742ac3c021a66cd2dac1c274ae5ab76.svg",
@@ -13,11 +21,11 @@
     "static/media/bx-home-alt-2.svg": "/portafolio-new-app/static/media/bx-home-alt-2.583944f660e7dff466fb7ee4ce31a7dc.svg",
     "static/media/bxs-spreadsheet.svg": "/portafolio-new-app/static/media/bxs-spreadsheet.4d18ec9680003cb3f7e73eadcd679609.svg",
     "static/media/bxs-user.svg": "/portafolio-new-app/static/media/bxs-user.749bb1826c0746b5c7b2d0108106fb4b.svg",
-    "main.b08f492d.css.map": "/portafolio-new-app/static/css/main.b08f492d.css.map",
-    "main.e8693d2a.js.map": "/portafolio-new-app/static/js/main.e8693d2a.js.map"
+    "main.922ca01a.css.map": "/portafolio-new-app/static/css/main.922ca01a.css.map",
+    "main.04bbc54a.js.map": "/portafolio-new-app/static/js/main.04bbc54a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b08f492d.css",
-    "static/js/main.e8693d2a.js"
+    "static/css/main.922ca01a.css",
+    "static/js/main.04bbc54a.js"
   ]
 }
