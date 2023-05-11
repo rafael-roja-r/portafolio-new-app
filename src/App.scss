@@ -479,6 +479,48 @@ body {
                 }
             }
 
+            .contact{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                .contactcard{
+                    width: 25%;
+                    background: #1E272E;
+                    text-align: center;
+                    justify-content: center;
+                    padding: 20px;
+                    border-radius: 20px;
+
+                    .contactimg{
+                        width: 100px;
+                        height: 100px;
+                        margin: auto;
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                           border-radius: 50%;
+                        }
+                    }
+
+                    .contacClip{
+                        a{
+
+                            span{
+                                color: #fff;
+
+                                img{
+                                    width: 20px;
+                                    margin: 10px;
+                                    filter: invert(50%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
         }
     }
