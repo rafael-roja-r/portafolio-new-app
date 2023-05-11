@@ -156,6 +156,7 @@ body {
                     @include Mobile(){
                         display: flex;
                         flex-direction: row;
+                        gap: 30px;
                     }
 
                                        
@@ -439,8 +440,13 @@ body {
                         }
 
                         img{
-                            width: 100%;
+                            width: 80%;
                             border-radius: 20px;
+                            object-fit: cover;
+
+                            @include Mobile(){
+                                width: 100%;
+                            }
                         }
 
                         p{
