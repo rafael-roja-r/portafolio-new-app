@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,25 +6,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 
-$title:'Poppins', sans-serif;
-$titleSub:'Open Sans', sans-serif;
+$title: 'Poppins', sans-serif;
+$titleSub: 'Open Sans', sans-serif;
 
-$degradador: linear-gradient(90deg, #1d2830 0%, #171F25 100% );
+$degradador: linear-gradient(90deg, #1d2830 0%, #171F25 100%);
 
 
 $color-bg: #1E272E;
-$color-bgc: #171F25; 
-$color-bgcard:#192229;
-$color-text:#8E9BA4;
+$color-bgc: #171F25;
+$color-bgcard: #192229;
+$color-text: #8E9BA4;
 $color-txtitle: #978360;
 
 
-body{
+body {
     background: $color-bg;
-  
+
 }
 
-.home{
+.home {
 
     width: 100%;
     height: 100vh;
@@ -33,31 +33,59 @@ body{
     align-items: center;
     justify-content: center;
 
-    h1{
+    h1 {
         font-size: 3rem;
         font-family: $title;
         color: $color-txtitle;
     }
-    h3{
-        font-size: 2rem;
+
+    h3 {
+        font-size: 1.4rem;
         font-family: $titleSub;
         color: $color-txtitle;
         font-weight: 300;
-        padding: 0px 10px;
+        padding: 10px 20px;
     }
-    p{
+
+    h4 {
+        font-size: 1rem;
+        font-family: $title;
+        color: $color-text;
+        font-weight: 300;
+    }
+
+    h5 {
+        font-size: 1rem;
+        font-family: $title;
+        color: $color-text;
+        font-weight: 300;
+    }
+
+    p {
         font-size: 1rem;
         font-family: $titleSub;
         color: $color-text;
     }
 
-    span{
+    span {
         font-family: $titleSub;
         font-size: .9rem;
         color: $color-text;
     }
 
-    .homeconte{
+    ul {
+        padding: 10px;
+
+        li {
+            font-family: $titleSub;
+            list-style: circle;
+            color: $color-text;
+            font-size: .8rem;
+        }
+    }
+
+
+    .homeconte {
         width: 90%;
         height: 90%;
         background: $color-bgc;
@@ -68,19 +96,19 @@ body{
 
         //componetes del menú 
 
-        .homesibar{
+        .homesibar {
             width: 15%;
             height: 100%;
             position: relative;
 
-            .homemenu{
+            .homemenu {
                 width: 90%;
                 margin: 10px auto;
-                
+
                 background: $color-bgc;
 
 
-                .homeclip{
+                .homeclip {
                     width: 80%;
                     margin: 20px auto;
                     height: 30vh;
@@ -90,7 +118,7 @@ body{
 
                     button {
                         width: 100%;
-                        height:40px;
+                        height: 40px;
                         border: none;
                         outline: none;
                         cursor: pointer;
@@ -98,14 +126,14 @@ body{
                         align-items: center;
                         border-radius: 20px 0px 0px 20px;
                         background: $color-bgc;
-                       
-                        
 
-                        &:hover{
+
+
+                        &:hover {
                             background-image: $degradador;
                         }
 
-                        img{
+                        img {
                             width: 24px;
                             height: 24px;
                             margin: 0px 5px 0px 20px;
@@ -115,27 +143,27 @@ body{
                     }
                 }
 
-                .homeredes{
+                .homeredes {
                     width: 90%;
                     position: absolute;
                     bottom: 30px;
                     left: 30px;
 
-                    .homeredeCont{
+                    .homeredeCont {
                         width: 80%;
                         display: flex;
                         flex-wrap: wrap;
 
-                        img{
+                        img {
                             filter: invert(50%);
                         }
 
-                        .homenavrede{
+                        .homenavrede {
                             width: 20px;
                             height: 20px;
                             margin: 0px 5px;
 
-                            
+
                         }
                     }
                 }
@@ -145,7 +173,7 @@ body{
 
         //componetes del contenido
 
-        .homeconatiner{
+        .homeconatiner {
             width: 85%;
             height: 100%;
             background: $color-bgc;
@@ -153,11 +181,167 @@ body{
             justify-content: center;
             align-items: center;
 
-            .homepages{
+            .homepages {
                 width: 96%;
-                height: 94%;    
-                background: #17191b;
+                height: 94%;
+                position: relative;
+
+
+
+                .inico {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    border-radius: 20px;
+
+                    p {
+                        position: absolute;
+                        bottom: 255px;
+                        left: calc(100% / 4);
+                    }
+
+                    h3 {
+                        position: absolute;
+                        bottom: 265px;
+                        left: calc(100% / 4.25);
+                    }
+
+                    h1 {
+                        position: absolute;
+                        bottom: 300px;
+                        left: calc(100% / 4);
+                    }
+
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        bottom: 0px;
+                        z-index: 1;
+                        opacity: 1%;
+                        filter: invert (0.6%);
+                        border-radius: 20px;
+
+
+                    }
+                }
             }
+
+            .perfil {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                .perfilinformacion {
+                    width: 80%;
+
+                    .perfilsobre {
+                        width: 90%;
+
+                        p {
+                            font-size: 11pt;
+                            font-weight: 500;
+                            padding: 10px;
+                        }
+
+                    }
+
+                    .perfilexpconten {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 20px;
+
+                        .perfilexpecia {
+                            width: 40%;
+
+                        }
+
+                    }
+
+                }
+
+                .perfilformationuser {
+                    width: 20%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    border-radius: 20px;
+
+                    .perfimg {
+                        width: 100%;
+
+                        .perfiimgcon {
+                            width: 150px;
+                            margin: auto;
+
+                            img {
+                                width: 100%;
+                                object-fit: cover;
+                            }
+
+                        }
+                    }
+
+                    .perfskills {
+                        width: 80%;
+                        margin: auto;
+                    }
+                }
+            }
+
+            .proyect {
+                width: 100%;
+
+                .proyectConte {
+                    width: 90%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+
+                    .proyectocard {
+                        width: 32%;
+                        height: 330px;
+                        background: $color-bgcard;
+                        padding: 20px;
+                        border-radius: 20px;
+                        position: relative;
+
+                        img{
+                            border-radius: 20px;
+                        }
+
+                        p{
+                            overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        }
+                        a{
+                            position: absolute;
+                            bottom: 15px;
+                            padding: 5px;
+                            width: 100px;
+                            background: $color-txtitle;
+                            color: $color-bgc;
+                            border-radius: 20px;
+                            text-align: center;
+                            font-family: $titleSub;
+                            text-decoration: none;
+                            font-size: 10pt;
+                        }
+                    }
+                }
+            }
+
+
         }
     }
 

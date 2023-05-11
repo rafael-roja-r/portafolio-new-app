@@ -10,6 +10,9 @@ import git from "../img/bxl-github.svg";
 import facc from "../img/bxl-facebook.svg";
 import tik from "../img/bxl-tiktok.svg";
 import wha from "../img/bxl-whatsapp.svg";
+import Inicio from "./inicio"
+import Perfil from './perfil';
+import Proyect from './proyecto';
 
 
 const Home = ()=>{
@@ -124,34 +127,33 @@ const Home = ()=>{
             {opcionSeleccionada === "inicio" && (
               <div className="inicontainer">
                 <h3>Inicio</h3>
-                <h3>Detalles</h3>
+                <Inicio/>
               </div>
             )}
 
             {opcionSeleccionada === "perfil" && (
               <div className="inicontainer">
                 <h3>Perfil</h3>
+                <Perfil/>
               </div>
             )}
 
             {opcionSeleccionada === "proyecto" && (
               <div className="inicontainer">
                 <h3>Proyecto</h3>
-                <h3>Detalles</h3>
+                <Proyect/>
               </div>
             )}
 
             {opcionSeleccionada === "formacion" && (
               <div className="inicontainer">
                 <h3>Formación</h3>
-                <h3>Detalles</h3>
               </div>
             )}
 
             {opcionSeleccionada === "contacto" && (
               <div className="inicontainer">
                 <h3>Contactar</h3>
-                <h3>Detalles</h3>
               </div>
             )}
              </div>
