@@ -13,6 +13,8 @@ import wha from "../img/bxl-whatsapp.svg";
 import Inicio from "./inicio"
 import Perfil from './perfil';
 import Proyect from './proyecto';
+import Formation from './fromation';
+import Contact from './contactar';
 
 
 const Home = ()=>{
@@ -148,12 +150,14 @@ const Home = ()=>{
             {opcionSeleccionada === "formacion" && (
               <div className="inicontainer">
                 <h3>Formación</h3>
+                <Formation/>
               </div>
             )}
 
             {opcionSeleccionada === "contacto" && (
               <div className="inicontainer">
                 <h3>Contactar</h3>
+                <Contact/>
               </div>
             )}
              </div>
