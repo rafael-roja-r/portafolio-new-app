@@ -102,7 +102,7 @@ const Perfil = ()=>{
 
                 </ul>
 
-                <h5>HABIILIDADES PERSONALES</h5>
+                <h5>Habilidades personales</h5>
 
                 <ul>
                     <li>Comunicación</li>
