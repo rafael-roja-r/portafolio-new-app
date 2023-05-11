@@ -2,9 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+@mixin Mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+
+
+@mixin Tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+
+       
+    }
+}
+
+@mixin Desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
 
 $title: 'Poppins', sans-serif;
 $titleSub: 'Open Sans', sans-serif;
@@ -32,6 +55,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 
     h1 {
         font-size: 3rem;
@@ -84,15 +108,17 @@ body {
         }
     }
 
-
     .homeconte {
         width: 90%;
         height: 90%;
         background: $color-bgc;
         display: flex;
-        flex-wrap: wrap;
         overflow: hidden;
         border-radius: 20px;
+
+        @include Mobile(){            
+        flex-direction: column;
+        }       
 
         //componetes del menú 
 
@@ -100,13 +126,24 @@ body {
             width: 15%;
             height: 100%;
             position: relative;
+            @include Mobile(){
+                width: 100%;
+                height: 10%;
+            }
+          
+           
 
             .homemenu {
                 width: 90%;
                 margin: 10px auto;
-
                 background: $color-bgc;
-
+                @include Mobile(){
+                    display: flex;
+                    height: 34px;                    
+                    position: absolute;
+                }           
+              
+              
 
                 .homeclip {
                     width: 80%;
@@ -116,6 +153,13 @@ body {
                     flex-direction: column;
                     gap: 10px;
 
+                    @include Mobile(){
+                        display: flex;
+                        flex-direction: row;
+                    }
+
+                                       
+
                     button {
                         width: 100%;
                         height: 40px;
@@ -124,13 +168,23 @@ body {
                         cursor: pointer;
                         display: flex;
                         align-items: center;
+                        gap: 10px;
                         border-radius: 20px 0px 0px 20px;
                         background: $color-bgc;
 
+                        @include Mobile(){
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 20px ;
+                        }
 
+                      
 
                         &:hover {
                             background-image: $degradador;
+                           @include Mobile(){
+                            background: transparent;
+                           }
                         }
 
                         img {
@@ -138,8 +192,18 @@ body {
                             height: 24px;
                             margin: 0px 5px 0px 20px;
                             filter: invert(50%);
+                            @include Mobile(){
+                                margin: 10px;
+                            }
+
                         }
 
+                        span{
+                            @include Mobile(){
+                                display: none;
+                            }
+                           
+                        }
                     }
                 }
 
@@ -149,6 +213,10 @@ body {
                     bottom: 30px;
                     left: 30px;
 
+                    @include Mobile(){
+                        display: none;
+                    }
+                    
                     .homeredeCont {
                         width: 80%;
                         display: flex;
@@ -181,10 +249,20 @@ body {
             justify-content: center;
             align-items: center;
 
+            @include Mobile(){
+                width: 100%;
+                height: 90%;
+            }
+
+      
+
             .homepages {
                 width: 96%;
                 height: 94%;
                 position: relative;
+                @include Mobile(){
+                    overflow-y: scroll;
+                }
 
 
 
@@ -202,18 +280,39 @@ body {
                         position: absolute;
                         bottom: 255px;
                         left: calc(100% / 4);
+
+                        @include Mobile(){
+                            width: 220px;
+                            bottom: 150px;
+                            left: 50px
+                        }
                     }
+
+                    
 
                     h3 {
                         position: absolute;
                         bottom: 265px;
                         left: calc(100% / 4.25);
+
+                        @include Mobile(){
+                            width: 260px;
+                            bottom: 180px;
+                            left: 30px
+                        }
                     }
 
                     h1 {
                         position: absolute;
                         bottom: 300px;
                         left: calc(100% / 4);
+
+                        @include Mobile(){
+                            font-size: 2.2rem;
+                            width: 260px;
+                            bottom: 210px;
+                            left: 50px
+                        }
                     }
 
 
@@ -240,8 +339,19 @@ body {
                 display: flex;
                 flex-wrap: wrap;
 
+                @include Mobile(){
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+
                 .perfilinformacion {
                     width: 80%;
+
+                    @include Mobile(){
+                        width: 100%;
+                        
+                    }
 
                     .perfilsobre {
                         width: 90%;
@@ -276,6 +386,10 @@ body {
                     gap: 10px;
                     border-radius: 20px;
 
+                    @include Mobile(){
+                        width: 100%;
+                    }
+
                     .perfimg {
                         width: 100%;
 
@@ -307,6 +421,11 @@ body {
                     flex-wrap: wrap;
                     gap: 10px;
 
+                    @include Mobile(){
+                        width: 100%;
+                        flex-direction: column;
+                    }
+
                     .proyectocard {
                         width: 32%;
                         height: 330px;
@@ -315,7 +434,12 @@ body {
                         border-radius: 20px;
                         position: relative;
 
+                        @include Mobile(){
+                            width: 100%;
+                        }
+
                         img{
+                            width: 100%;
                             border-radius: 20px;
                         }
 
@@ -355,12 +479,19 @@ body {
                     flex-wrap: wrap;
                     gap: 10px;
 
+                    @include Mobile(){
+                        width: 100%;
+                    }
+
                     .forminscard{
                         width:  30%;
                         margin: auto;
                         background: #1d2830;
                         padding: 20px;
                         border-radius: 20px;
+                        @include Mobile(){
+                            width: 90%;
+                        }
                         
                         
                         .formacarimg{
@@ -411,6 +542,10 @@ body {
                                 text-overflow: ellipsis;
                                 white-space: nowrap;
                                 overflow: hidden;
+
+                                @include Mobile(){
+                                    width: 160px;
+                                }
                             }
 
 
@@ -424,6 +559,10 @@ body {
                                 position: absolute;
                                 right: 5px;
                                 bottom: 5px;
+
+                                @include Mobile(){
+                                    width: 60px;
+                                }
                             }
                         }
                         
@@ -438,6 +577,11 @@ body {
                         text-align: center;
                         justify-content: center;
 
+                        @include Mobile(){
+                            width: 80%;
+                            margin: auto;
+                        }
+
                     }
                     .aluraCon{
                         display: flex;
@@ -449,10 +593,20 @@ body {
                             width: 25%;
                            height: 80%;
 
+                           @include Mobile(){                            
+                            width: 100%;
+                            margin: auto;
+                           }
+
                         img{
                             width: 100%;
                             object-fit: cover;
                             border-radius: 20px;
+
+                            @include Mobile(){
+                                width: 96%;
+                                padding: 10px;
+                            }
                         }
                             
                         }
@@ -464,14 +618,25 @@ body {
                     flex-wrap: wrap;
                     gap: 10px;
 
+
                     .nextCocard{
                         width: 25%;
                         height: 30%;
+
+                        @include Mobile(){                            
+                            width: 100%;
+                            margin: auto;
+                           }
 
                         img{
                             width: 100%;
                             object-fit: cover;
                             border-radius: 20px;
+
+                            @include Mobile(){
+                                width: 96%;
+                                padding: 10px;
+                            }
                         }
 
                     }
@@ -483,6 +648,12 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 10px;
+                @include Mobile(){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                }
 
                 .contactcard{
                     width: 25%;
@@ -491,6 +662,10 @@ body {
                     justify-content: center;
                     padding: 20px;
                     border-radius: 20px;
+
+                    @include Mobile(){
+                        width: 90%;
+                    }
 
                     .contactimg{
                         width: 100px;
