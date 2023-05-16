@@ -83,41 +83,7 @@ const Perfil = ()=>{
                 </div>
                 
             </div>
-            <div className="perfskills">
-                <h5>Skills</h5>
-                <ul>
-                    <li>CSS, HTML, JavaScript </li>
-                    <li>Java, PHP, Node.js </li>
-                    <li>Git, Boostrap, Fundation</li>
-                    <li>Materialize, Sass</li>
-                    <li>Jquery, AngularJS, Reactjs </li>
-                    <li>MongoDB, MySql </li>
-                </ul>
-
-                <h5>Diseño</h5>
-                <ul>
-                    <li>Adobe Ilustrator </li>
-                    <li>Adobe Photoshop </li>
-                    <li>Figma</li>                  
-
-                </ul>
-
-                <h5>Habilidades personales</h5>
-
-                <ul>
-                    <li>Comunicación</li>
-                    <li>Liderazgo</li>
-                    <li>Motivación</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Responsabilidad</li>
-                    <li>Puntualidad</li>
-                    <li>Compromiso</li>               
-
-
-                </ul>
-
-
-            </div>
+            
 
         </div>
       </div>

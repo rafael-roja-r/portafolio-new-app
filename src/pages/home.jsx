@@ -10,11 +10,13 @@ import git from "../img/bxl-github.svg";
 import facc from "../img/bxl-facebook.svg";
 import tik from "../img/bxl-tiktok.svg";
 import wha from "../img/bxl-whatsapp.svg";
+import Ch from "../img/bxs-user-check.svg";
 import Inicio from "./inicio"
 import Perfil from './perfil';
 import Proyect from './proyecto';
 import Formation from './fromation';
 import Contact from './contactar';
+import Skills from './skills';
 
 
 const Home = ()=>{
@@ -40,6 +42,11 @@ const Home = ()=>{
                   {" "}
                   <img src={use} alt="" />
                   <span>Perfil</span>{" "}
+                </button>
+                <button onClick={() => mostrarContenido("skills")}>
+                  {" "}
+                  <img src={Ch} alt="" />
+                  <span>Skills</span>{" "}
                 </button>
                 <button onClick={() => mostrarContenido("proyecto")}>
                   {" "}
@@ -137,6 +144,12 @@ const Home = ()=>{
               <div className="inicontainer">
                 <h3>Perfil</h3>
                 <Perfil/>
+              </div>
+            )}
+             {opcionSeleccionada === "skills" && (
+              <div className="inicontainer">
+                <h3>Skills</h3>
+                <Skills/>
               </div>
             )}
 
