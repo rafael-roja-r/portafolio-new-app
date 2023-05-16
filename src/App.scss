@@ -140,6 +140,7 @@ body {
                 margin: 10px auto;
                 background: $color-bgc;
                 @include Mobile(){
+                    width: 50%;
                     display: flex;
                     height: 34px;                    
                     position: absolute;
@@ -158,7 +159,7 @@ body {
                     @include Mobile(){
                         display: flex;
                         flex-direction: row;
-                        gap: 30px;
+                        gap: 20px;
                     }
 
                                        
@@ -422,6 +423,7 @@ body {
 
                 .skills__conten{
                     width: 100%;
+                    height: 100%;
                     display: flex;
                     flex-wrap: wrap;
                     gap: 10px;
@@ -435,6 +437,10 @@ body {
                     }
                     @include Tablet(){
                         overflow: scroll;
+                        display: flex;
+                       flex-wrap: wrap;
+                       gap: 20px;
+                       padding: 10px;
                     }
                     
 
@@ -454,8 +460,8 @@ body {
                         }
 
                         @include Tablet(){
-                            width: 50%;
-                            margin: auto;
+                            width: 25%;
+                            
                         }
 
                         .skills__img{

@@ -3,7 +3,7 @@ import inc from "../img/bx-home-alt-2.svg"
 import use from "../img/bxs-user.svg"
 import pro from "../img/bxs-spreadsheet.svg"
 import fo from "../img/bxs-flag-checkered.svg"
-import con from "../img/bxs-user.svg"
+import con from "../img/bxs-contact.svg"
 import lin from "../img/bxl-linkedin-square.svg";
 import cod from "../img/bxl-codepen.svg";
 import git from "../img/bxl-github.svg";
