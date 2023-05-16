@@ -797,6 +797,11 @@ body {
                     @include Mobile(){
                         width: 90%;
                     }
+                    @include Tablet(){
+                        width: 40%;
+                        height: 180px;
+                        margin: auto;
+                    }
 
                     .contactimg{
                         width: 100px;
@@ -808,6 +813,11 @@ body {
                             height: 100%;
                             object-fit: cover;
                            border-radius: 50%;
+                        }
+
+                        @include Tablet(){
+                            width: 60px;
+                        height: 60px;
                         }
                     }
 
